@@ -279,40 +279,27 @@ footer {
 @media (max-width: 768px) {
 
     .nav-bar {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .nav-menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 10px;
+        flex-direction: row; 
+        overflow-x: auto; 
+        white-space: nowrap;
+        gap: 8px;
+        margin-top: 0;
+        padding-bottom: 5px;
     }
 
-    .hero {
-        padding: 20px;
-        text-align: center;
+    .nav-menu::-webkit-scrollbar {
+        display: none; 
     }
 
-    .hero-inner h1 {
-        font-size: 2rem;
-    }
-
-    .cta-button {
-        width: 100%;
-        max-width: 200px;
-    }
-        .nav-button {
-        padding: 8px 12px;
+    .nav-button {
+        flex: 0 0 auto; 
         font-size: 0.7rem;
-    }
-
-    .hero-inner h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero {
-        padding-top: 40px;
+        padding: 8px 12px;
     }
 
 }
