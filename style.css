@@ -379,5 +379,48 @@ footer {
     .about-description p {
         margin-bottom: 6px;
     }
+        
+@media (max-width: 768px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .product-card {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-card h3 {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .product-card p {
+        font-size: 0.85rem;
+    }
+
+    .buy-btn {
+        font-size: 0.75rem;
+        padding: 6px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 140px;
+    }
 
 }
